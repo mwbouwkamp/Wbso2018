@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\mwbou\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\29973f85e2f09b158c5be367ea9a2c04\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="D:\programming\AndroidStudio\Wbso2018\app\build\intermediates\transforms\preDex\release\6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mwbou\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\2e2f38d0b6e31c7d8b9525204d398da2\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="D:\programming\AndroidStudio\Wbso2018\app\build\intermediates\transforms\preDex\release\1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mwbou\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\8c2ce43d8ee6380a5c63ce260eb0da4d\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="D:\programming\AndroidStudio\Wbso2018\app\build\intermediates\transforms\preDex\release\3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mwbou\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\e8777f690af3eb3feb285b11081355e9\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\programming\AndroidStudio\Wbso2018\app\build\intermediates\transforms\preDex\release\4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mwbou\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\c610dd7f2984c53b9577cbbf5590dce5\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="D:\programming\AndroidStudio\Wbso2018\app\build\intermediates\transforms\preDex\release\7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mwbou\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\c2f338804bae943b265f0c246c4cf238\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="D:\programming\AndroidStudio\Wbso2018\app\build\intermediates\transforms\preDex\release\9.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\programming\AndroidStudio\Wbso2018\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\programming\AndroidStudio\Wbso2018\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_1a7767b5c1837f9fcaa28307a82323ec80a97b3a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\programming\AndroidStudio\Wbso2018\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="dbc070dc2b28e84179a0a64b263481cd39dc6c95">
+        <dex dex="D:\programming\AndroidStudio\Wbso2018\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b23e063b7434aa90e25b6202e20156261f2dbdd3\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mwbou\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\4e3ab40ea1dc5cb40b64139de9c540d4\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="D:\programming\AndroidStudio\Wbso2018\app\build\intermediates\transforms\preDex\release\2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mwbou\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\d25ea5affe9a30af5cd9c7ac12aec248\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="D:\programming\AndroidStudio\Wbso2018\app\build\intermediates\transforms\preDex\release\5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mwbou\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\80b5d66a1c7dbfd99b9535a71ff93a80\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="D:\programming\AndroidStudio\Wbso2018\app\build\intermediates\transforms\preDex\release\8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\mwbou\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="D:\programming\AndroidStudio\Wbso2018\app\build\intermediates\transforms\preDex\release\10.jar" />
+    </item>
+
+</items>
