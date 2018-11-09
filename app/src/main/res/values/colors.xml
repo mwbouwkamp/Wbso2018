@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+    <item name="em_blue" type="color">#009CDA</item>
+    <item name="white" type="color">#FFFFFF</item>
+    <item name="grey" type="color">#DDDDDD</item>
+    
+</resources> 

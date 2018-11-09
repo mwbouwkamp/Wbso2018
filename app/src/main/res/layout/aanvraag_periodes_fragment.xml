@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:weightSum="7" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical" >
+
+        <include layout = "@layout/fragment_header" />
+
+        <nl.emconsult.wbso2018.layoutElement.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Aanvraagperiodes"
+            android:textColor="@color/em_blue"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <nl.emconsult.wbso2018.layoutElement.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Hoe vaak per jaar vraagt u aan?"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_1periode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@color/em_blue"
+            android:text="1 aanvraag"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button_2periode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@color/em_blue"
+            android:text="2 aanvragen"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button_3periode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@color/em_blue"
+            android:text="3 aanvragen"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <include layout = "@layout/fragment_footer" />
+
+</LinearLayout>

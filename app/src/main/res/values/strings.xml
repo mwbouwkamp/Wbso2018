@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WBSO</string>
+    <string name="action_settings">Settings</string>
+    <string name="Periode1Header">Periode 1</string>
+    <string name="Periode2Header">Periode 2</string>
+    <string name="Periode3Header">Periode 3</string>
+    <string name="uren">Uren</string>
+    <string name="uurloon">S&amp;O uurloon</string>
+    <string name="SOloon">S&amp;O loon</string>
+    <string name="kostenuitgaven">Kosten uitgaven</string>
+    <string name="rdaForfait">RDA forfait</string>
+    <string name="SOloonkosten">S&amp;O (loon)kosten</string>
+    <string name="SOAfdrachtvermindering">S&amp;O afdrachtvermindering</string>
+    <string name="click_image_for_information">Click image for information</string>
+    <string name="aanvraag_x">Aanvraag X</string>
+    <string name="berekenen">berekenen</string>
+    <string name="kosten">Kosten</string>
+    <string name="uitgaven">Uitgaven</string>
+    <string name="logo_evers_manders_subsidieadviseurs">Logo Evers + Manders Subsidieadviseurs</string>
+
+</resources>

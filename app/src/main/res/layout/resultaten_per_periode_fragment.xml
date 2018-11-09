@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:weightSum="7" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout = "@layout/fragment_header" />
+
+            <nl.emconsult.wbso2018.layoutElement.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="center"
+                android:text="Uw voordeel"
+                android:textColor="@color/em_blue"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <nl.emconsult.wbso2018.layoutElement.MyTextView
+                android:id="@+id/textView_totaal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/em_blue"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <nl.emconsult.wbso2018.layoutElement.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="Per periode"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/results_period1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/em_blue"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView_periode1_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Periode1Header"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TableRow
+                            android:id="@+id/tableRow_period1_uren"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:weightSum="6" >
+
+                            <TextView
+                                android:id="@+id/textView_periode1_uren_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/uren"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/textView_periode1_uren"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow_periode1_uurloon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView_periode1_uurloon_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/uurloon"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/textView_periode1_uurloon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white" />
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#ffffff" />
+
+                        <TableRow
+                            android:id="@+id/tableRow_periode1_soloon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView_periode1_soloon_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/SOloon"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/textView_periode1_soloon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow_periode1_kostenuitgaven"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView_periode1_kostenuitgaven_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/kostenuitgaven"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/textView_periode1_kostenuitgaven"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow_periode1_forfait"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView_periode1_forfait_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/rdaForfait"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/textView_periode1_forfait"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white" />
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#ffffff" />
+
+                        <TableRow
+                            android:id="@+id/tableRow_periode1_soloonkosten"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView_periode1_soloonkosten_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/SOloonkosten"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/textView_periode1_soloonkosten"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white" />
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="#ffffff" />
+
+                        <TableRow
+                            android:id="@+id/tableRow_period1_afdrachtvermindering"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView_periode1_afdrachtvermindering_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/SOAfdrachtvermindering"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView_periode1_afdrachtvermindering"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="#ffffff" />
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/results_period2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/em_blue"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView_periode2_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Periode2Header"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TableRow
+                            android:id="@+id/tableRow_periode2_uren"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:weightSum="6" >
+
+                            <TextView
+                                android:id="@+id/textView_periode2_uren_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/uren"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/textView_periode2_uren"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow_periode2_uurloon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView_periode2_uurloon_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/uurloon"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/textView_periode2_uurloon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white" />
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#ffffff" />
+
+                        <TableRow
+                            android:id="@+id/tableRow_periode2_soloon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView_periode2_soloon_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/SOloon"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/textView_periode2_soloon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow_periode2_kostenuitgaven"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView_periode2_kostenuitgaven_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/kostenuitgaven"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/textView_periode2_kostenuitgaven"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow_periode2_forfait"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView_periode2_forfait_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/rdaForfait"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/textView_periode2_forfait"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white" />
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#ffffff" />
+
+                        <TableRow
+                            android:id="@+id/tableRow_periode2_soloonkosten"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView_periode2_soloonkosten_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/SOloonkosten"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/textView_periode2_soloonkosten"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white" />
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="#ffffff" />
+
+                        <TableRow
+                            android:id="@+id/tableRow_periode2_afdrachtvermindering"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView_periode2_afdrachtvermindering_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/SOAfdrachtvermindering"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView_periode2_afdrachtvermindering"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="#ffffff" />
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/results_period3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/em_blue"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView_periode3_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Periode3Header"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TableRow
+                            android:id="@+id/tableRow_periode3_uren"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:weightSum="6" >
+
+                            <TextView
+                                android:id="@+id/textView_periode3_uren_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/uren"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/textView_periode3_uren"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow_periode3_uurloon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView_periode3_uurloon_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/uurloon"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/textView_periode3_uurloon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white" />
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#ffffff" />
+
+                        <TableRow
+                            android:id="@+id/tableRow_periode3_soloon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView_periode3_soloon_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/SOloon"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/textView_periode3_soloon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow_periode3_kostenuitgaven"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView_periode3_kostenuitgaven_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/kostenuitgaven"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/textView_periode3_kostenuitgaven"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow_periode3_forfait"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView_periode3_forfait_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/rdaForfait"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/textView_periode3_forfait"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white" />
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#ffffff" />
+
+                        <TableRow
+                            android:id="@+id/tableRow_periode3_soloonkosten"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView_periode3_soloonkosten_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/SOloonkosten"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/textView_periode3_soloonkosten"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white" />
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="#ffffff" />
+
+                        <TableRow
+                            android:id="@+id/tableRow_periode3_afdrachtvermindering"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView_periode3_afdrachtvermindering_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:text="@string/SOAfdrachtvermindering"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView_periode3_afdrachtvermindering"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="#ffffff" />
+                    </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <include layout = "@layout/fragment_footer_phone" />
+
+</LinearLayout>

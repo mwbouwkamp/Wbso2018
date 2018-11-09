@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:weightSum="7" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical" >
+
+        <include layout = "@layout/fragment_header" />
+
+        <nl.emconsult.wbso2018.layoutElement.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="WBSO Calculator"
+            android:textColor="@color/em_blue"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <nl.emconsult.wbso2018.layoutElement.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="2017"
+            android:textColor="@color/em_blue"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:id="@+id/textView_jaargang"/>
+
+        <nl.emconsult.wbso2018.layoutElement.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Met deze app kunt u berekenen wat de WBSO u op kan leveren"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@color/em_blue"
+            android:text="Bereken uw voordeel"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button_starter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@color/em_blue"
+            android:text="Bent u starter?"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button_jaargang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@color/em_blue"
+            android:text="Jaar aanpassen"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button_stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@color/em_blue"
+            android:text="Afsluiten"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <include layout = "@layout/fragment_footer" />
+
+</LinearLayout>
