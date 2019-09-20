@@ -42,21 +42,21 @@
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/button_2016"
+            android:id="@+id/button_2020"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:background="@color/em_blue"
-            android:text="2016"
+            android:text="2020"
             android:textColor="@color/white" />
 
         <Button
-            android:id="@+id/button_2017"
+            android:id="@+id/button_2019"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:background="@color/em_blue"
-            android:text="2017"
+            android:text="2019"
             android:textColor="@color/white" />
 
         <Button
@@ -69,12 +69,21 @@
             android:textColor="@color/white" />
 
         <Button
-            android:id="@+id/button_2019"
+            android:id="@+id/button_2017"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:background="@color/em_blue"
-            android:text="2019"
+            android:text="2017"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button_2016"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@color/em_blue"
+            android:text="2016"
             android:textColor="@color/white" />
 
     </LinearLayout>

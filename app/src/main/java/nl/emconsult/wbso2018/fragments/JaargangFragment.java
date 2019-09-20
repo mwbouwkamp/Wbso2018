@@ -32,6 +32,7 @@ public class JaargangFragment extends MyFragment {
 		Button btn2017 = (Button) rootView.findViewById(R.id.button_2017);
 		Button btn2018 = (Button) rootView.findViewById(R.id.button_2018);
 		Button btn2019 = (Button) rootView.findViewById(R.id.button_2019);
+		Button btn2020 = (Button) rootView.findViewById(R.id.button_2020);
 
 		btn2016.setOnClickListener(new OnClickListener() {
 			
@@ -71,6 +72,17 @@ public class JaargangFragment extends MyFragment {
 			@Override
 			public void onClick(View v) {
 				MainActivity.getAanvraag().setWbsoJaargang(2019);
+				Fragment frag = new StartFragment();
+				FragmentTransaction fragTransaction = getFragmentManager().beginTransaction().replace(R.id.pager, frag);
+				fragTransaction.addToBackStack("tag").commit();
+			}
+		});
+
+		btn2020.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				MainActivity.getAanvraag().setWbsoJaargang(2020);
 				Fragment frag = new StartFragment();
 				FragmentTransaction fragTransaction = getFragmentManager().beginTransaction().replace(R.id.pager, frag);
 				fragTransaction.addToBackStack("tag").commit();

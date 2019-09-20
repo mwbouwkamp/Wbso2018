@@ -57,11 +57,16 @@ public class MainActivity extends AppCompatActivity {
 		jaargang2019.setupRDA(1800, 10, 4);
 		jaargang2019.setupSO(350000, 0.32f, 0.4f, 0.16f);
 
+		WbsoJaargang jaargang2020 = new WbsoJaargang(2020);
+		jaargang2020.setupRDA(1800, 10, 4);
+		jaargang2020.setupSO(350000, 0.32f, 0.4f, 0.16f);
+
 		jaargangen = new SparseArray<>();
 		jaargangen.put(2016, jaargang2016);
 		jaargangen.put(2017, jaargang2017);
 		jaargangen.put(2018, jaargang2018);
 		jaargangen.put(2019, jaargang2019);
+		jaargangen.put(2020, jaargang2020);
 	}
 
 	@Override

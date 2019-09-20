@@ -157,7 +157,7 @@ public class ApplicationFlowTest {
         int uurloon = 1;
         TestAanvraag aanvraag = new TestAanvraag(true, uurloon, uren);
 
-        onView(withId(R.id.button_2017)).perform(click());
+        onView(withId(R.id.button_2020)).perform(click());
         onView(withId(R.id.button_starter)).perform(click());
         onView(withId(R.id.checkBox_aantalaanvragen)).check(matches(isNotChecked()));
         onView(withId(R.id.checkBox_ondernemer)).check(matches(isNotChecked()));
