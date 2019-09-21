@@ -14,9 +14,15 @@ public class WbsoJaargang {
     private float soPercentageEersteSchijf;
     private float soPercentageEersteSchijfStarter;
     private float soPercentageTweedeSchijf;
+    private int numPeriodes;
 
-    public WbsoJaargang(int jaar){
+    public WbsoJaargang(int jaar, int numPeriodes){
         this.jaar = jaar;
+        this.numPeriodes = numPeriodes;
+    }
+
+    public int getNumPeriodes() {
+        return numPeriodes;
     }
 
     public void setupRDA(int rdaGrensEersteSchijf, int rdaPercentageEersteSchijf, int rdaPercentageTweedeSchijf) {

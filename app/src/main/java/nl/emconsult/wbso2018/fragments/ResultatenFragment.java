@@ -194,7 +194,7 @@ public class ResultatenFragment extends MyFragment {
 		else {
 			tvRdaLabel.setText("Kosten en uitgaven");
 		}
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i < 4; i++) {
 			if (i < MainActivity.getAanvraag().getAantalAanvragen()) {
 				uren += MainActivity.getAanvraag().getApplicationPeriods()[i].getHours();
 				soLoon += MainActivity.getAanvraag().getApplicationPeriods()[i].getHours() * uurloon;

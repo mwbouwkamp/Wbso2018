@@ -147,6 +147,7 @@ public class ApplicationFlowTest {
         onView(withId(R.id.textView_jaargang)).check(matches(withText("2017")));
     }
 
+
     /**
      * Tests rondom startersregime
      */
@@ -244,6 +245,23 @@ public class ApplicationFlowTest {
         onView(withId(R.id.button_2017)).perform(click());
         onView(withId(R.id.button_start)).perform(click());
         onView(withId(R.id.button_1periode)).perform(click());
+        onView(withId(R.id.button_forfaitair)).perform(click());
+        onView(withId(R.id.editText_uurloon)).check(matches(withText("29")));
+        onView(withId(R.id.button_volgende)).perform(click());
+        onView(withId(R.id.editText_uren)).check(matches(withText("")));
+        onView(withId(R.id.linearLayout_rda)).check(matches(not(isDisplayed())));
+        onView(withId(R.id.button_submit)).perform(click());
+    }
+
+    /**
+     * Test 2020 4 aanvraagperiodes
+     */
+
+    @Test
+    public void test4periods2020() throws Exception {
+        onView(withId(R.id.button_2020)).perform(click());
+        onView(withId(R.id.button_start)).perform(click());
+        onView(withId(R.id.button_4periode)).perform(click());
         onView(withId(R.id.button_forfaitair)).perform(click());
         onView(withId(R.id.editText_uurloon)).check(matches(withText("29")));
         onView(withId(R.id.button_volgende)).perform(click());

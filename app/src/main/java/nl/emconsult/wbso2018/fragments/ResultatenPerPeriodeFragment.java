@@ -29,60 +29,71 @@ public class ResultatenPerPeriodeFragment extends MyFragment {
 		MainActivity.getAanvraag().calculateRdaForfait();
 		MainActivity.getAanvraag().calculateSO();
 
-		TextView[] tvUren = new TextView[3];
-		TextView[] tvUurloon = new TextView[3];
-		TextView[] tvSOLoon = new TextView[3];
-		TextView[] tvKostenUitgaven = new TextView[3];
-		TextView[] tvRdaForfait = new TextView[3];
-		TextView[] tvSOloonkosten = new TextView[3];
-		TextView[] tvSOAfdrachtvermindering = new TextView[3];
+		//TODO: Recyclerview maken
+		TextView[] tvUren = new TextView[4];
+		TextView[] tvUurloon = new TextView[4];
+		TextView[] tvSOLoon = new TextView[4];
+		TextView[] tvKostenUitgaven = new TextView[4];
+		TextView[] tvRdaForfait = new TextView[4];
+		TextView[] tvSOloonkosten = new TextView[4];
+		TextView[] tvSOAfdrachtvermindering = new TextView[4];
 		
 		tvUren[0] = (TextView) rootView.findViewById(R.id.textView_periode1_uren);
 		tvUren[1] = (TextView) rootView.findViewById(R.id.textView_periode2_uren);
 		tvUren[2] = (TextView) rootView.findViewById(R.id.textView_periode3_uren);
-		
+		tvUren[3] = (TextView) rootView.findViewById(R.id.textView_periode4_uren);
+
 		tvUurloon[0] = (TextView) rootView.findViewById(R.id.textView_periode1_uurloon);
 		tvUurloon[1] = (TextView) rootView.findViewById(R.id.textView_periode2_uurloon);
 		tvUurloon[2] = (TextView) rootView.findViewById(R.id.textView_periode3_uurloon);
+		tvUurloon[3] = (TextView) rootView.findViewById(R.id.textView_periode4_uurloon);
 
 		tvSOLoon[0] = (TextView) rootView.findViewById(R.id.textView_periode1_soloon);
 		tvSOLoon[1] = (TextView) rootView.findViewById(R.id.textView_periode2_soloon);
 		tvSOLoon[2] = (TextView) rootView.findViewById(R.id.textView_periode3_soloon);
+		tvSOLoon[3] = (TextView) rootView.findViewById(R.id.textView_periode4_soloon);
 
 		tvKostenUitgaven[0] = (TextView) rootView.findViewById(R.id.textView_periode1_kostenuitgaven);
 		tvKostenUitgaven[1] = (TextView) rootView.findViewById(R.id.textView_periode2_kostenuitgaven);
 		tvKostenUitgaven[2] = (TextView) rootView.findViewById(R.id.textView_periode3_kostenuitgaven);
+		tvKostenUitgaven[3] = (TextView) rootView.findViewById(R.id.textView_periode4_kostenuitgaven);
 
 		tvRdaForfait[0] = (TextView) rootView.findViewById(R.id.textView_periode1_forfait);
 		tvRdaForfait[1] = (TextView) rootView.findViewById(R.id.textView_periode2_forfait);
 		tvRdaForfait[2] = (TextView) rootView.findViewById(R.id.textView_periode3_forfait);
+		tvRdaForfait[3] = (TextView) rootView.findViewById(R.id.textView_periode4_forfait);
 
 		tvSOloonkosten[0] = (TextView) rootView.findViewById(R.id.textView_periode1_soloonkosten);
 		tvSOloonkosten[1] = (TextView) rootView.findViewById(R.id.textView_periode2_soloonkosten);
 		tvSOloonkosten[2] = (TextView) rootView.findViewById(R.id.textView_periode3_soloonkosten);
+		tvSOloonkosten[3] = (TextView) rootView.findViewById(R.id.textView_periode4_soloonkosten);
 
 		tvSOAfdrachtvermindering[0] = (TextView) rootView.findViewById(R.id.textView_periode1_afdrachtvermindering);
 		tvSOAfdrachtvermindering[1] = (TextView) rootView.findViewById(R.id.textView_periode2_afdrachtvermindering);
 		tvSOAfdrachtvermindering[2] = (TextView) rootView.findViewById(R.id.textView_periode3_afdrachtvermindering);
+		tvSOAfdrachtvermindering[3] = (TextView) rootView.findViewById(R.id.textView_periode4_afdrachtvermindering);
 
 		
-		TableRow[] trKostenUitgaven = new TableRow[3];
-		TableRow[] trRdaForfait = new TableRow[3];
+		TableRow[] trKostenUitgaven = new TableRow[4];
+		TableRow[] trRdaForfait = new TableRow[4];
 		
 		trKostenUitgaven[0] = (TableRow) rootView.findViewById(R.id.tableRow_periode1_kostenuitgaven);
 		trKostenUitgaven[1] = (TableRow) rootView.findViewById(R.id.tableRow_periode2_kostenuitgaven);
 		trKostenUitgaven[2] = (TableRow) rootView.findViewById(R.id.tableRow_periode3_kostenuitgaven);
-		
+		trKostenUitgaven[3] = (TableRow) rootView.findViewById(R.id.tableRow_periode4_kostenuitgaven);
+
 		trRdaForfait[0] = (TableRow) rootView.findViewById(R.id.tableRow_periode1_forfait);
 		trRdaForfait[1] = (TableRow) rootView.findViewById(R.id.tableRow_periode2_forfait);
 		trRdaForfait[2] = (TableRow) rootView.findViewById(R.id.tableRow_periode3_forfait);
-		
-		LinearLayout[] llResultaten = new LinearLayout[3];
+		trRdaForfait[3] = (TableRow) rootView.findViewById(R.id.tableRow_periode4_forfait);
+
+		LinearLayout[] llResultaten = new LinearLayout[4];
 		
 		llResultaten[0] = (LinearLayout) rootView.findViewById(R.id.results_period1);
 		llResultaten[1] = (LinearLayout) rootView.findViewById(R.id.results_period2);
 		llResultaten[2] = (LinearLayout) rootView.findViewById(R.id.results_period3);
-		
+		llResultaten[3] = (LinearLayout) rootView.findViewById(R.id.results_period4);
+
 		MyTextView tvTotaal = (MyTextView) rootView.findViewById(R.id.textView_totaal);
 		
 		if (MainActivity.getAanvraag().isRdaForfait()) {
@@ -91,7 +102,7 @@ public class ResultatenPerPeriodeFragment extends MyFragment {
 		MainActivity.getAanvraag().calculateSO();
 		
 		int totaal = 0;
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i < 4; i++) {
 			if (i < MainActivity.getAanvraag().getAantalAanvragen()) {
 				float hours = MainActivity.getAanvraag().getApplicationPeriods()[i].getHours();
 				int rate = MainActivity.getAanvraag().getHourlyRate();

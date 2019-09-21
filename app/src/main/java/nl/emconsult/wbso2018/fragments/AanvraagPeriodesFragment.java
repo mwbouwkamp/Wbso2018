@@ -30,7 +30,12 @@ public class AanvraagPeriodesFragment extends MyFragment {
 		Button btn1Periode = (Button) rootView.findViewById(R.id.button_1periode);
 		Button btn2Periode = (Button) rootView.findViewById(R.id.button_2periode);
 		Button btn3Periode = (Button) rootView.findViewById(R.id.button_3periode);
-		
+		Button btn4Periode = (Button) rootView.findViewById(R.id.button_4periode);
+
+		if (MainActivity.getJaargangen().get(MainActivity.getAanvraag().getWbsoJaargang()).getNumPeriodes() == 4) {
+			btn4Periode.setVisibility(View.VISIBLE);
+		}
+
 		btn1Periode.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -52,8 +57,9 @@ public class AanvraagPeriodesFragment extends MyFragment {
 				fragTransaction.addToBackStack("tag").commit();
 			}
 		});
+
 		btn3Periode.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				MainActivity.getAanvraag().maakPeriodes(3);
@@ -63,6 +69,16 @@ public class AanvraagPeriodesFragment extends MyFragment {
 			}
 		});
 
+		btn4Periode.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				MainActivity.getAanvraag().maakPeriodes(4);
+				Fragment frag = new RdaRegimeFragment();
+				FragmentTransaction fragTransaction = getFragmentManager().beginTransaction().replace(R.id.pager, frag);
+				fragTransaction.addToBackStack("tag").commit();
+			}
+		});
 
 		return rootView;
 	}

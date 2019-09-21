@@ -58,6 +58,17 @@
             android:background="@color/em_blue"
             android:text="3 aanvragen"
             android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button_4periode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@color/em_blue"
+            android:text="4 aanvragen"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
     </LinearLayout>
 
     <include layout = "@layout/fragment_footer" />

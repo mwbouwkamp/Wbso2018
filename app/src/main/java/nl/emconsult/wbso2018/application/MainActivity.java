@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
 		setWbsoJaargangen();
 
-		aanvraag = new Aanvraag(2017);
+		aanvraag = new Aanvraag(2020);
 
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction().add(R.id.pager, new JaargangFragment()).commit();
@@ -41,23 +41,23 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 	private void setWbsoJaargangen() {
-		WbsoJaargang jaargang2016 = new WbsoJaargang(2016);
+		WbsoJaargang jaargang2016 = new WbsoJaargang(2016, 3);
 		jaargang2016.setupRDA(1800, 10, 4);
 		jaargang2016.setupSO(350000, 0.32f, 0.4f, 0.16f);
 
-		WbsoJaargang jaargang2017 = new WbsoJaargang(2017);
+		WbsoJaargang jaargang2017 = new WbsoJaargang(2017, 3);
 		jaargang2017.setupRDA(1800, 10, 4);
 		jaargang2017.setupSO(350000, 0.32f, 0.4f, 0.16f);
 
-		WbsoJaargang jaargang2018 = new WbsoJaargang(2018);
+		WbsoJaargang jaargang2018 = new WbsoJaargang(2018, 3);
 		jaargang2018.setupRDA(1800, 10, 4);
 		jaargang2018.setupSO(350000, 0.32f, 0.4f, 0.14f);
 
-		WbsoJaargang jaargang2019 = new WbsoJaargang(2019);
+		WbsoJaargang jaargang2019 = new WbsoJaargang(2019, 3);
 		jaargang2019.setupRDA(1800, 10, 4);
 		jaargang2019.setupSO(350000, 0.32f, 0.4f, 0.16f);
 
-		WbsoJaargang jaargang2020 = new WbsoJaargang(2020);
+		WbsoJaargang jaargang2020 = new WbsoJaargang(2020, 4);
 		jaargang2020.setupRDA(1800, 10, 4);
 		jaargang2020.setupSO(350000, 0.32f, 0.4f, 0.16f);
 
